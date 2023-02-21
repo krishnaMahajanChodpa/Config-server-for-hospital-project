@@ -1,4 +1,19 @@
-
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: hospital
+    password: kCS@#123
+    url: jdbc:mysql://localhost:3306/hospital
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  application:
+    name: DOCTOR-SERVICE
+    
 eureka:
   client:
     service-url:
