@@ -1,3 +1,4 @@
+
 spring:
   cloud:
       gateway:
@@ -5,11 +6,12 @@ spring:
            - id: DOCTOR-SERVICE
              uri: lb://DOCTOR-SERVICE
              predicates:
-                  - Path=/doctor/**       
+                  - Path=/doctor/**
            - id: PATIENT-SERVICE
              uri: lb://PATIENT-SERVICE
              predicates:
-                  - Path=/patient/**         
+                  - Path=/patient/**   
+                  
 eureka:
   client:
     service-url:
