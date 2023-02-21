@@ -10,7 +10,7 @@ spring:
            - id: PATIENT-SERVICE
              uri: lb://PATIENT-SERVICE
              predicates:
-                  - Path=/patient/**   
+                  - Path=/patient/** 
                   
 eureka:
   client:
